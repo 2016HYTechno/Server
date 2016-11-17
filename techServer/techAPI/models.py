@@ -1,8 +1,10 @@
 from django.db import models
+# models.Model import primary key
+
 from django.contrib.auth.models import User
 from django.contrib.sessions.models import Session
 from django.contrib.auth.hashers import make_password
-# Create your models here.
+
 
 class UserProfile(models.Model):
     user_id = models.EmailField(unique=True)
